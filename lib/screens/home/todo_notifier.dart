@@ -1,5 +1,5 @@
 import 'package:riverpod_annotation/riverpod_annotation.dart';
-import 'package:todo_sample/screens/home/todo_providers.dart';
+import 'package:todo_sample/providers/todo_providers.dart';
 
 part 'todo_notifier.g.dart';
 
@@ -10,8 +10,10 @@ class TodoNotifier extends _$TodoNotifier {
     return;
   }
 
-  Future<void> delete() async {
+  Future<void> delete({required Function callback}) async {
     await ref.read(todoRepositoryProvider).delete(todoId);
+
+    callback();
   }
 
   Future<void> setDone(bool done) async {

@@ -1,5 +1,5 @@
 import 'package:riverpod_annotation/riverpod_annotation.dart';
-import 'package:todo_sample/screens/home/todo_providers.dart';
+import 'package:todo_sample/providers/todo_providers.dart';
 
 part 'create_todo_notifier.g.dart';
 

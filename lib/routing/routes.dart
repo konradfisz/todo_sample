@@ -1,7 +1,7 @@
 import 'package:flutter/widgets.dart';
 import 'package:go_router/go_router.dart';
 import 'package:todo_sample/screens/create_todo/create_todo_page.dart';
-import 'package:todo_sample/main.dart';
+import 'package:todo_sample/screens/home/home_page.dart';
 
 part 'routes.g.dart';
 
@@ -12,7 +12,7 @@ class HomeRoute extends GoRouteData {
   const HomeRoute();
 
   @override
-  Widget build(BuildContext context, GoRouterState state) => const MyHomePage();
+  Widget build(BuildContext context, GoRouterState state) => const HomePage();
 }
 
 @immutable
